@@ -20,8 +20,8 @@ class CreateFoodModelsTable extends Migration
             $table->string('info');
             $table->timestamps();
         });
+        
     }
-
     /**
      * Reverse the migrations.
      *

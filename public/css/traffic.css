@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+
+ 
+img {
+  width: 300px;
+  height: 550px;
+  padding-top: 25px;
+}
+
+.wrap {
+  width: 100%;
+  margin: auto;
+}
+
+.item_t1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.item_t1 h2 {
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.item_t1 p {
+  font-weight: 300;
+  line-height: 1.7;
+  color: black;
+}
+
+.item_t1 p a {
+  color: black;
+}
+
+.item_t1 .pic {
+  width: 55%;
+  flex-shrink: 0;
+}
+
+.item_t1 .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.item_t1 .txt {
+  width: 55%;
+  flex-shrink: 0;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.item_t1> :first-child {
+  margin-right: -10%;
+}
+
+.item_t1:nth-child(1) .txt {
+  background-color: rgba(254, 121, 121, .8);
+}
+
+.item_t1:nth-child(2) .txt {
+  background-color: rgba(100, 132, 199, .8);
+}

@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
 
 class food extends Controller
 {
@@ -14,6 +14,7 @@ class food extends Controller
             $username = $user->name;
         }
         $titles = DB::table('videolists')->get();
-        return view('pages.food1', compact('username', 'titles'));
+        $foods = DB::table('food_models')->get();
+        return view('pages.food1', compact('username','foods'));
      }
 }

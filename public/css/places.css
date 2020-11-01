@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+img {
+    width: 350px;
+    height: 250px;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  .menu_places {
+    background-color: #f4f4f2;
+  }
+  
+  .card {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
