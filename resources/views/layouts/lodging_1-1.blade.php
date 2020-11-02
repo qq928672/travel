@@ -16,7 +16,7 @@
 <body>
 <div class="header">
 			@include('includes.menu')
-			@include('includes.carousel')
+			@include('includes.Lc')
 		</div>
 		<div class="main">
     @yield("main")

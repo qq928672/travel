@@ -1,7 +1,7 @@
 <style>
   .carousel-item {
   height: 80vh;
-  min-height:100%;
+  min-height:80%;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,7 +22,7 @@
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('/img/C0.jpg')">
         <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">高雄玩透透</h2>
+          <h2 class="display-4">景點玩透透<h2>
           <p class="lead">提供您最佳的旅遊資訊
           </p>
         </div>

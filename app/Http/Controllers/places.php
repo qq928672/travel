@@ -14,7 +14,7 @@ class places extends Controller
             $username = $user->name;
         }
         $titles = DB::table('videolists')->get();
-        return view('pages.places1', compact('username', 'titles'));
-        
+        $places = DB::table('places_models')->get();
+        return view('pages.places1', compact('username','places'));
     }
 }
