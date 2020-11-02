@@ -14,6 +14,7 @@ class lodging extends Controller
             $username = $user->name;
         }
         $titles = DB::table('videolists')->get();
-        return view('pages.lodging1', compact('username', 'titles'));
+        $lodging = DB::table('lodging_models')->get();
+        return view('pages.lodging1', compact('username','lodging'));
      }
 }
