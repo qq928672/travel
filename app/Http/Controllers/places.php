@@ -13,8 +13,8 @@ class places extends Controller
             $user = Auth::user();
             $username = $user->name;
         }
-        $titles = DB::table('videolists')->get();
-        $places = DB::table('places_models')->get();
-        return view('pages.places1', compact('username','places'));
+        $places = DB::table('places_models')->whereIn('type', [1])->get();
+        $posts = DB::table('places_models')->whereIn('type', [2])->get();
+        return view('pages.places1', compact('username','places','posts'));
     }
 }

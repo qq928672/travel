@@ -1,19 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
-class food extends Controller
+class art_places extends Controller
 {
-    public function food_page(){
+    public function art_places_page(){
         $username = "Guest";
         if (Auth::check()) {
             $user = Auth::user();
             $username = $user->name;
         }
-        $foods = DB::table('food_models')->whereIn('type', [1])->get();
-        return view('pages.food1', compact('username','foods'));
-     }
+        $posts = DB::table('places_models')->whereIn('type', [3])->get();
+        return view('pages.places3', compact('username','posts'));
+    }
 }

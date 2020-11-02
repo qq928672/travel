@@ -1,4 +1,4 @@
-@extends('layouts.food_1-1')
+@extends('layouts.food_2-1')
 <style>
   .item img {
     width: 100%;

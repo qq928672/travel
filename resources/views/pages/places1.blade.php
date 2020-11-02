@@ -40,13 +40,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">古蹟</a>
+            <a class="nav-link" href="{{ url('/pages/places1') }}">古蹟</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">特色地標</a>
+            <a class="nav-link" href="{{ url('/pages/places2') }}">特色地標</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">藝文特區</a>
+            <a class="nav-link" href="{{ url('/pages/places3') }}">藝文特區</a>
           </li>
         </ul>
       </div>

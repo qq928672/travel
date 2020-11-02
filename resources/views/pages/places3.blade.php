@@ -1,4 +1,4 @@
-@extends('layouts.food_1-1')
+@extends('layouts.places_3-1')
 <style>
   .item img {
     width: 100%;
@@ -31,29 +31,29 @@
   }
 </style>
 @section("main")
+<!-- start  -->
 <div class="menu_places">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url('/pages/food1') }}">平價美食</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url('/pages/food2') }}">在地小吃</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">人氣推薦</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- end  -->
-
-  <ul class="d-flex row align-items-stretch position-relative mx-md-1 mx-xl-n1">
-    @foreach ($foods as $title)
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/pages/places1') }}">古蹟</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/pages/places2') }}">特色地標</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/pages/places3') }}">藝文特區</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end  -->
+    <ul class="d-flex row align-items-stretch position-relative mx-md-1 mx-xl-n1">
+    @foreach ($posts as $title)
     <li class="col-12 col-xl-4 mb-3 mb-md-4 px-xl-2">
     <br>
     <h3>按讚數:</h3>

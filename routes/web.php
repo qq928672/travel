@@ -3,8 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VideoPlayController;
 use App\Http\Controllers\places;
+use App\Http\Controllers\Sp_places;
+use App\Http\Controllers\art_places;
 use App\Http\Controllers\lodging;
 use App\Http\Controllers\food;
+use App\Http\Controllers\local_food;
 use App\Http\Controllers\traffic;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,8 +32,11 @@ if (Auth::check()) {
 }
 Route::get('/', [VideoPlayController::class, 'index']);
 Route::get('/pages/places1', [places::class, 'places_page']);
+Route::get('/pages/places2', [Sp_places::class, 'Sp_places_page']);
+Route::get('/pages/places3', [art_places::class, 'art_places_page']);
 Route::get('/pages/lodging1', [lodging::class, 'lodging_page']);
 Route::get('/pages/food1', [food::class, 'food_page']);
+Route::get('/pages/food2', [local_food::class, 'local_food_page']);
 Route::get('/pages/traffic1', [traffic::class, 'traffic_page']);
 Route::get('/logout/', [VideoPlayController::class, 'logout']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
