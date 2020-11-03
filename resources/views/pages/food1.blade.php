@@ -45,7 +45,7 @@
           <a class="nav-link" href="{{ url('/pages/food2') }}">在地小吃</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">人氣推薦</a>
+          <a class="nav-link" href="{{ url('/pages/food3') }}">人氣推薦</a>
         </li>
       </ul>
     </div>

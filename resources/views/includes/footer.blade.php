@@ -1,7 +1,7 @@
 <!-- Footer -->
 <style>
   footer{
-    background: #495464;
+    background: #cdc9c3;
   }
   .footer-copyright p{
       color:white;

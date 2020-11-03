@@ -28,9 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	background-color:#ebebeb;
-}
 ol, ul {
 	list-style: none;
 }

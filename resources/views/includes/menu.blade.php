@@ -2,7 +2,6 @@
     @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
   .nav-link{
     font-size: 25px;
-   
   }
   .nav-item{
     display: flex;
@@ -18,10 +17,9 @@
     background-color: #e8e8e8;
     color: white;
 }
-
 </style>
-<nav class="navbar navbar-expand-lg    bg-light">
-  <a class="navbar-brand" href="#">{{$username}}</a>
+<nav class="navbar navbar-expand-lg"style=background-color:#fbf7f0;>
+  <a class="navbar-brand" href="#"style=color:#495464>{{$username}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

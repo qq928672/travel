@@ -40,13 +40,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">民宿</a>
+            <a class="nav-link" href="{{ url('/pages/lodging1') }}">民宿</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">飯店</a>
+            <a class="nav-link" href="{{ url('/pages/lodging2') }}">飯店</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">旅館</a>
+            <a class="nav-link" href="{{ url('/pages/lodging3') }}">旅館</a>
           </li>
         </ul>
       </div>
