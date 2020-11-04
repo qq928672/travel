@@ -24,10 +24,16 @@
     transform: scale(0);
     transition: .5s;
   }
-
   .item:hover .txt {
     transform: scale(1);
     opacity: 1;
+  }
+  .menu_places{
+    background-image: url(../img/Tr2.jpg);
+      background-size: cover;
+  }
+  h3{
+    color:#7e7474;
   }
 </style>
 @section("main")
@@ -60,7 +66,7 @@
       <div class="card" style="width: 18rem;">
       <div class="item">
             <div class="txt">
-              <h3>{{$title->name }}</h3>
+              <h2>{{$title->name }}</h2>
               <br>
               <p>{{$title->phone}}</p>
               <br>

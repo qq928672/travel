@@ -9,21 +9,23 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ asset('css/Reset.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/places.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/places.css') }}">
   <title>景點</title>
+  <style>
+  </style>
 </head>
 
 <body>
-<div class="header">
-			@include('includes.menu')
-			@include('includes.Pc')
-		</div>
-		<div class="main">
+  <div class="header">
+    @include('includes.menu')
+    @include('includes.Pc')
+  </div>
+  <div class="main">
     @yield("main")
-		</div>
-		<div class="footer">
-		@include('includes.footer')
-		</div>
+  </div>
+  <div class="footer">
+    @include('includes.footer')
+  </div>
 
 
 

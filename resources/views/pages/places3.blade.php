@@ -29,6 +29,13 @@
     transform: scale(1);
     opacity: 1;
   }
+  .menu_places{
+    background-image: url(../img/Tr3.jpg);
+      background-size: cover;
+  }
+  h3{
+    color:#f6f5f1;
+  }
 </style>
 @section("main")
 <!-- start  -->
@@ -60,7 +67,7 @@
       <div class="card" style="width: 18rem;">
       <div class="item">
             <div class="txt">
-              <h3>{{$title->name }}</h3>
+              <h2>{{$title->name }}</h2>
               <br>
               <p>{{$title->phone}}</p>
               <br>

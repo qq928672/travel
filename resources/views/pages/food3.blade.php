@@ -29,9 +29,16 @@
     transform: scale(1);
     opacity: 1;
   }
+  .menu_food{
+    background-image: url(../img/Tr8.jpg);
+      background-size: cover;
+  }
+  h3{
+    color:#f6f5f1;
+  }
 </style>
 @section("main")
-<div class="menu_places">
+<div class="menu_food">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -60,7 +67,7 @@
       <div class="card" style="width: 18rem;">
       <div class="item">
             <div class="txt">
-              <h3>{{$title->name }}</h3>
+              <h2>{{$title->name }}</h2>
               <br>
               <p>{{$title->phone}}</p>
               <br>

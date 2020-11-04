@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="{{ asset('css/traffic.css') }}">
   <title>交通</title>
   <style>
-
+    body{
+      background-image: url(../img/Tr1.jpg);
+      background-size: cover;
+    }
   </style>
 </head>
 
