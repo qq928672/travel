@@ -34,7 +34,7 @@
       background-size: cover;
   }
   h3{
-    color:#555555;
+    color:#f6f5f1;
   }
 </style>
 @section("main")
