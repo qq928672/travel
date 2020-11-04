@@ -29,7 +29,7 @@
     opacity: 1;
   }
   .menu_places{
-    background-image: url(../img/Tr2.jpg);
+    background-image: url(../img/Tr10.jpg);
       background-size: cover;
   }
   h3{
