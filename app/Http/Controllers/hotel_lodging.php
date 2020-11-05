@@ -13,7 +13,6 @@ class hotel_lodging extends Controller
             $user = Auth::user();
             $username = $user->name;
         }
-        $titles = DB::table('videolists')->get();
         $lodging = DB::table('lodging_models')->whereIn('type', [2])->get();
         return view('pages.lodging2', compact('username','lodging'));
      }

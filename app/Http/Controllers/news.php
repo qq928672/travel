@@ -5,15 +5,15 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
-class lodging extends Controller
+class news extends Controller
 {
-    public function lodging_page(){
+    public function news_page(){
         $username = "Guest";
         if (Auth::check()) {
             $user = Auth::user();
             $username = $user->name;
         }
-        $lodging = DB::table('lodging_models')->whereIn('type', [1])->get();
-        return view('pages.lodging1', compact('username','lodging'));
+        $news = DB::table('news_models')->get();
+        return view('pages.index', compact('username','news'));
      }
 }

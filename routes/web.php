@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VideoPlayController;
 use App\Http\Controllers\places;
+use App\Http\Controllers\news;
 use App\Http\Controllers\Sp_places;
 use App\Http\Controllers\art_places;
 use App\Http\Controllers\lodging;
@@ -34,6 +35,7 @@ if (Auth::check()) {
     $username = $user->name;
 }
 Route::get('/', [VideoPlayController::class, 'index']);
+Route::get('/', [news::class, 'news_page']);
 Route::get('/pages/places1', [places::class, 'places_page']);
 Route::get('/pages/places2', [Sp_places::class, 'Sp_places_page']);
 Route::get('/pages/places3', [art_places::class, 'art_places_page']);
