@@ -19,6 +19,7 @@
 
 	<div class="header">
 		@include('includes.menu')
+	
 		@include('includes.carousel')
 	</div>
 	<div class="main">

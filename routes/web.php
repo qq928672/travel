@@ -1,9 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VideoPlayController;
-use App\Http\Controllers\places;
 use App\Http\Controllers\news;
+use App\Http\Controllers\places;
 use App\Http\Controllers\Sp_places;
 use App\Http\Controllers\art_places;
 use App\Http\Controllers\lodging;
@@ -14,7 +13,6 @@ use App\Http\Controllers\hit_food;
 use App\Http\Controllers\local_food;
 use App\Http\Controllers\traffic;
 use Illuminate\Support\Facades\Auth;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
