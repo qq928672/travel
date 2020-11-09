@@ -67,7 +67,7 @@
       <div class="card" style="width: 18rem;">
       <div class="item">
             <div class="txt">
-              <h2>{{$title->name }}</h2>
+            <h2><a href="{{$title->URL}}">{{$title->name}}</a></h2>
               <br>
               <p>{{$title->phone}}</p>
               <br>
