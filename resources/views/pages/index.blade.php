@@ -1,9 +1,9 @@
 @extends('layouts.base')
 @section("News")
 <style>
-    a{
-        color:black;
-    }
+  a {
+    color: black;
+  }
 </style>
 <table class="table">
   <thead>
@@ -14,9 +14,9 @@
     </tr>
   </thead>
   <tbody>
-  @foreach ($news as $title)
+    @foreach ($news as $title)
     <tr>
-    <td><a href="https://khh.travel/zh-tw/event/news/{{$title->NID}}" target="_blank">{{$title->name}}</a></td>
+      <td><a href="https://khh.travel/zh-tw/event/news/{{$title->NID}}">{{$title->name}}</a></td>
       <td>{{$title->location }}</td>
       <td>{{$title->time }}</td>
     </tr>
@@ -24,4 +24,3 @@
   </tbody>
 </table>
 @endsection
-

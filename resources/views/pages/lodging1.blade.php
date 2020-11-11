@@ -47,13 +47,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('/pages/lodging1') }}">民宿</a>
+            <a class="nav-link" href="{{route('lodging')}}">民宿</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('/pages/lodging2') }}">飯店</a>
+            <a class="nav-link" href="{{route('lodging1')}}">飯店</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('/pages/lodging3') }}">旅館</a>
+            <a class="nav-link" href="{{route('lodging2')}}">旅館</a>
           </li>
         </ul>
       </div>
@@ -67,7 +67,7 @@
       <div class="card" style="width: 18rem;">
       <div class="item">
             <div class="txt">
-              <h2><a href="{{$title->URL}}">{{$title->name}}</a></h2>
+              <h2>{{$title->name}}</h2>
               <br>
               <p>{{$title->phone}}</p>
               <br>

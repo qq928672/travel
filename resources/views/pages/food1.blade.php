@@ -46,13 +46,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/pages/food1') }}">平價美食</a>
+          <a class="nav-link" href="{{route('food')}}">平價美食</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/pages/food2') }}">在地小吃</a>
+          <a class="nav-link" href="{{route('food1')}}">在地小吃</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/pages/food3') }}">人氣推薦</a>
+          <a class="nav-link" href="{{route('food2')}}">人氣推薦</a>
         </li>
       </ul>
     </div>

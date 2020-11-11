@@ -40,17 +40,17 @@
         </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/pages/places1') }}">景點<i class="fas fa-map-marker-alt"></i>
+        <a class="nav-link" href="{{route('places')}}">景點<i class="fas fa-map-marker-alt"></i>
 
         </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/pages/food1') }}">美食<i class="fas fa-utensils"></i>
+        <a class="nav-link" href="{{route('food')}}">美食<i class="fas fa-utensils"></i>
 
         </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/pages/lodging1') }}">住宿<i class="fas fa-bed"></i>
+        <a class="nav-link" href="{{route('lodging')}}">住宿<i class="fas fa-bed"></i>
 
         </a>
       </li>
