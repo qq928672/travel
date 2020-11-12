@@ -34,7 +34,6 @@
     background-image: url(../img/Tr7.jpg);
     background-size: cover;
   }
-
   h3 {
     color: #f6f5f1;
   }
@@ -72,7 +71,7 @@
       @if (Route::has('login'))
       @auth
       <form method="GET">
-        <h3>按讚數:<?php echo "<input type=submit style=''name=$n value={$title->likes}>";?></h3>
+        <h3>按讚數:<?php echo "<input type=submit name=$n value={$title->likes}>";?></h3>
       </form>
       <?php
       if (isset($_GET["$n"])) {
@@ -90,7 +89,7 @@
       <div class="card" style="width: 18rem;">
         <div class="item">
           <div class="txt">
-            <h2>{{$title->name}}</h2>
+            <h2><a href="{{$title->URL}}">{{$title->name}}</a></h2>
             <br>
             <p>{{$title->phone}}</p>
             <br>
