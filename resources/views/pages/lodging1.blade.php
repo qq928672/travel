@@ -71,10 +71,10 @@
       @if (Route::has('login'))
       @auth
       <form method="GET">
-        <h3>按讚數:<?php echo "<input type=submit name=$n value={$title->likes}>";?></h3>
+        <h3>按讚數:<?php echo "<input type=image src=../img/heart.png height=30px; name=$n value={$title->likes}>{$title->likes}";?></h3>
       </form>
       <?php
-      if (isset($_GET["$n"])) {
+      if (isset($_GET["$n"."_x"])) {
         DB ::table('lodging_models')
           ->where('id', $n)
           ->increment('likes', 1);
