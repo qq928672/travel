@@ -1,4 +1,5 @@
 @extends('layouts.food_1-1')
+<script src="https://kit.fontawesome.com/0b805b3133.js" crossorigin="anonymous"></script>
 <style>
   .item img {
     width: 100%;
@@ -29,12 +30,16 @@
     transform: scale(1);
     opacity: 1;
   }
-  .menu_food{
+
+  .menu_food {
     background-image: url(../img/Tr8.jpg);
-      background-size: cover;
+    background-size: cover;
   }
-  h3{
-    color:#f6f5f1;
+  h3 {
+    color: #f6f5f1;
+  }
+  button{
+    color: red;
   }
 </style>
 @section("main")
@@ -46,13 +51,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="{{route('food')}}">平價美食</a>
+          <a class="nav-link" href="{{route('food1')}}">平價美食</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('food1')}}">在地小吃</a>
+          <a class="nav-link" href="{{route('food2')}}">在地小吃</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('food2')}}">人氣推薦</a>
+          <a class="nav-link" href="{{route('food3')}}">人氣推薦</a>
         </li>
       </ul>
     </div>
@@ -61,9 +66,30 @@
 
   <ul class="d-flex row align-items-stretch position-relative mx-md-1 mx-xl-n1">
     @foreach ($foods as $title)
+    <?php
+    $n = "{$title->id}";
+    $c = "{$title->type}";
+    ?>
     <li class="col-12 col-xl-4 mb-3 mb-md-4 px-xl-2">
       <br>
-      <h3>按讚數:</h3>
+      @if (Route::has('login'))
+      @auth
+      <form method="GET">
+        <h3>按讚數:<?php echo "<input type=submit style=''name=$n value={$title->likes}>";?></h3>
+      </form>
+      <?php
+      if (isset($_GET["$n"])) {
+        DB ::table('food_models')
+          ->where('id', $n)
+          ->increment('likes', 1);
+        header("Location: food$c");
+        exit;
+      }
+      ?>
+      @else
+      
+      @endif
+      @endif
       <div class="card" style="width: 18rem;">
         <div class="item">
           <div class="txt">
